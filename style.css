@@ -1,0 +1,87 @@
+body {
+  font-family: Overpass;
+  color: #404042;
+  font-size: 18px;
+  margin:0;
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+  color: #404042;
+}
+
+body h1{
+  color:white;
+}
+
+a {
+  color: #1A48E3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #CE2FAE;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+
+}
+
+.banner{
+  background-image: URL("./images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 120px;
+  text-align: center;
+}
+.button-blue{
+	background-color: #1A48E3;
+	padding: 16px 48px;
+	color: white;
+  border-radius: 20px;
+}
+
+.card-white{
+  background:white;
+  box-shadow: 0 0 60px rgba(130, 0, 0, 0.3);
+  width:300px;
+  text-align: center;
+  padding:30; 
+}
+
+.card-white img {
+  width: 200;
+  height: 200;
+  object-fit: cover;
+  border: 3px solid whitesmoke;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.footer{
+  background: #404042;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer p{
+  color:white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .cards{
+    grid-template-columns: 1fr;
+  }
+}
